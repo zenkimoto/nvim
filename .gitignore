@@ -1,0 +1,2 @@
+# Ignore lua compiled plugin file
+plugin/*
