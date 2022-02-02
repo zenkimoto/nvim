@@ -58,6 +58,9 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "joshdick/onedark.vim"
 
+  -- Lualine
+  use 'nvim-lualine/lualine.nvim'
+
   -- Comments
   use "numToStr/Comment.nvim" -- Easily comment stuff
 
