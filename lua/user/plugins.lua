@@ -54,6 +54,12 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "joshdick/onedark.vim"
 
+  -- Comments
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+
+  -- Autopairs
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+
   -- cmp Plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -81,12 +87,12 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
 
+  -- Context aware comments (requires treesitter)
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
   -- nvim-tree
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-
-  -- Autopairs
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
