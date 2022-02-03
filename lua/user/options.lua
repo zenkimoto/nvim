@@ -36,7 +36,7 @@ opt.wrap = false                            -- display lines as one long line
 opt.scrolloff = 8                           -- is one of my fav
 opt.sidescrolloff = 8
 --opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
---opt.guifont = "Sauce Code Pro Nerd Font Complete:h17"
+opt.guifont = "FiraCode Nerd Font"
 
 opt.shortmess:append "c"
 
