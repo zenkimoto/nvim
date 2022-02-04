@@ -104,14 +104,14 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-  -- Autopairs
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-
   -- Toggleterm
   use "akinsho/toggleterm.nvim"
 
   -- neoscroll
   use 'karb94/neoscroll.nvim'
+
+  -- indent-blankline
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
