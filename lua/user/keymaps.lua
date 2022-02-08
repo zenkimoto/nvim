@@ -35,8 +35,8 @@ keymap("n", "<S-j>", "<C-d>", opts)
 keymap("n", "<S-k>", "<C-u>", opts)
 
 -- Clear Highlighted Text
-keymap("n", "<leader>/", ":noh", opts)
-keymap("n", "<space>/", ":noh", opts)
+keymap("n", "<leader>/<CR>", ":noh", opts)
+keymap("n", "<space>/<CR>", ":noh", opts)
 
 -- Resize with arrows
 keymap("n", "<leader><Up>", ":resize +2<CR>", opts)
