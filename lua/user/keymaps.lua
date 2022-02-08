@@ -43,7 +43,8 @@ keymap("n", "<space>c", ":Bdelete<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter normal mode
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
+keymap("i", "jj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
