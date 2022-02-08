@@ -27,6 +27,17 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 --keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
+-- Remap Shift-J (Annoying)
+keymap("n", "<leader>j", "<S-j>", opts)
+
+-- Remap Shift-J and Shift-K
+keymap("n", "<S-j>", "<C-d>", opts)
+keymap("n", "<S-k>", "<C-u>", opts)
+
+-- Clear Highlighted Text
+keymap("n", "<leader>/", ":noh", opts)
+keymap("n", "<space>/", ":noh", opts)
+
 -- Resize with arrows
 keymap("n", "<leader><Up>", ":resize +2<CR>", opts)
 keymap("n", "<leader><Down>", ":resize -2<CR>", opts)
