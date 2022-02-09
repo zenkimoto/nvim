@@ -99,7 +99,7 @@ return packer.startup(function(use)
 
   -- nvim-tree
   use 'kyazdani42/nvim-web-devicons'
-  use { 'kyazdani42/nvim-tree.lua', commit = "ea92e7bf7ccd1815b60342706356c373bb7df216" }
+  use 'kyazdani42/nvim-tree.lua'
 
   -- Git
   use "lewis6991/gitsigns.nvim"
