@@ -3,6 +3,8 @@ vim.api.nvim_set_keymap('n', '<space>h', "<cmd>lua require'hop'.hint_char2()<cr>
 vim.api.nvim_set_keymap('n', '<space>l', "<cmd>lua require'hop'.hint_lines()<cr>", {})
 vim.api.nvim_set_keymap('v', '<space>h', "<cmd>lua require'hop'.hint_char2()<cr>", {})
 vim.api.nvim_set_keymap('v', '<space>l', "<cmd>lua require'hop'.hint_lines()<cr>", {})
+vim.api.nvim_set_keymap('n', '<leader><leader>w', ":HopWordAC<cr>", {})
+vim.api.nvim_set_keymap('n', '<leader><leader>b', ":HopWordBC<cr>", {})
 -- vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>", {})
 -- vim.api.nvim_set_keymap('o', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, inclusive_jump = true })<cr>", {})
 -- vim.api.nvim_set_keymap('o', 'F', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, inclusive_jump = true })<cr>", {})
