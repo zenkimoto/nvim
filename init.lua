@@ -16,4 +16,6 @@ then
   require "user.lualine"
   require "user.neoscroll"
   require "user.hop"
+else
+  require "user.plugins-vscode"
 end
