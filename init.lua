@@ -14,6 +14,7 @@ then
 --  require "user.gitsigns"
 --  require "user.bufferline"
   require "user.lualine"
+  require "user.telescope"
 --  require "user.neoscroll"
   require "user.hop"
 else
