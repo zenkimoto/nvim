@@ -104,7 +104,7 @@ return packer.startup(function(use)
   --use "lewis6991/gitsigns.nvim"
 
   -- Toggleterm
-  --use "akinsho/toggleterm.nvim"
+  use "akinsho/toggleterm.nvim"
 
   -- neoscroll
   --use 'karb94/neoscroll.nvim'
