@@ -31,12 +31,6 @@ local mode = {
 	end,
 }
 
-local filetype = {
-	"filetype",
-	icons_enabled = false,
-	icon = nil,
-}
-
 local branch = {
 	"branch",
 	icons_enabled = true,
@@ -66,17 +60,17 @@ lualine.setup({
 	options = {
 		icons_enabled = true,
 		theme = "auto",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
 		disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
 	},
 	sections = {
 		lualine_a = { branch, diagnostics },
 		lualine_b = { mode },
-		lualine_c = {},
+		lualine_c = { 'filename' },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { diff, spaces, "encoding", filetype },
+		lualine_x = { diff, spaces, "encoding", 'filetype' },
 		lualine_y = { location },
 		lualine_z = { progress },
 	},
@@ -91,3 +85,4 @@ lualine.setup({
 	tabline = {},
 	extensions = {},
 })
+

@@ -13,7 +13,7 @@ then
 --  require "user.toggleterm"
 --  require "user.gitsigns"
 --  require "user.bufferline"
---  require "user.lualine"
+  require "user.lualine"
 --  require "user.neoscroll"
   require "user.hop"
 else
