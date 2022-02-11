@@ -15,7 +15,7 @@ then
 --  require "user.bufferline"
 --  require "user.lualine"
 --  require "user.neoscroll"
---  require "user.hop"
+  require "user.hop"
 else
   require "user.plugins-vscode"
   require "user.keymaps"
