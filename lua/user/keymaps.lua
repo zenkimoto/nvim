@@ -5,11 +5,6 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
--- keymap("", "<Space>", "<Nop>", opts)
--- vim.g.mapleader = " "
--- vim.g.maplocalleader = " "
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -18,31 +13,30 @@ local keymap = vim.api.nvim_set_keymap
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal --
+-- Normal Mode --
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Open up netrw
 --keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
 -- Remap Shift-J (Annoying)
 keymap("n", "<leader>j", "<S-j>", opts)
+keymap("n", "<space>j", "<S-j>", opts)
 
 -- Remap Shift-J and Shift-K
 keymap("n", "<S-j>", "<C-d>", opts)
 keymap("n", "<S-k>", "<C-u>", opts)
 
--- Clear Highlighted Text
-keymap("n", "<leader>/<CR>", ":noh", opts)
-keymap("n", "<space>/<CR>", ":noh", opts)
-
--- Resize with arrows
-keymap("n", "<leader><Up>", ":resize +2<CR>", opts)
-keymap("n", "<leader><Down>", ":resize -2<CR>", opts)
-keymap("n", "<leader><Right>", ":vertical resize -2<CR>", opts)
-keymap("n", "<leader><Left>", ":vertical resize +2<CR>", opts)
+-- Resize with windows arrows
+keymap("n", "<space><Up>", ":resize +2<CR>", opts)
+keymap("n", "<space><Down>", ":resize -2<CR>", opts)
+keymap("n", "<space><Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<space><Left>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -52,12 +46,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>c", ":Bdelete<CR>", opts)
 keymap("n", "<space>c", ":Bdelete<CR>", opts)
 
--- Insert --
--- Press jk fast to enter normal mode
+-- Insert Mode --
+-- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>", opts)
-keymap("i", "jj", "<ESC>", opts)
+-- keymap("i", "jj", "<ESC>", opts)
 
--- Visual --
+-- Visual Mode --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -65,6 +59,8 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "<S-j>", ":m .+1<CR>==", opts)
 keymap("v", "<S-k>", ":m .-2<CR>==", opts)
+
+-- Paste
 keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
@@ -90,3 +86,4 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<space>e", ":NvimTreeToggle<cr>", opts)
+
