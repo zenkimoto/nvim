@@ -85,6 +85,6 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<space>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<space>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>e", ":NeoTreeRevealInSplitToggle<cr>", opts)
+keymap("n", "<space>e", ":NeoTreeRevealInSplitToggle<cr>", opts)
 
