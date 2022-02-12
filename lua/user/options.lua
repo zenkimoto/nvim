@@ -41,3 +41,5 @@ opt.shortmess:append "c"
 
 cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
+
+vim.g.netrw_banner = 0
