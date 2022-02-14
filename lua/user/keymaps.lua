@@ -5,6 +5,11 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+--Remap space as leader key
+--keymap("", "<Space>", "<Nop>", opts)
+--vim.g.mapleader = "\x1b"
+--vim.g.maplocalleader = "\x1b"
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -48,8 +53,8 @@ keymap("n", "<space>c", ":Bdelete<CR>", opts)
 
 -- Insert Mode --
 -- Press jk fast to exit insert mode
--- keymap("i", "jk", "<ESC>", opts)
--- keymap("i", "jj", "<ESC>", opts)
+keymap("i", "jk", "<ESC>", opts)
+keymap("i", ";;", "<ESC>A;", opts)
 
 -- Visual Mode --
 -- Stay in indent mode
