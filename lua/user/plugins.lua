@@ -122,9 +122,14 @@ return packer.startup(function(use)
   -- indent-blankline
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- Hop
   use {
     'phaazon/hop.nvim',
     branch = 'v1.2'
+  }
+
+  use { "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons"
   }
 
   -- Automatically set up your configuration after cloning packer.nvim

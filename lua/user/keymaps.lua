@@ -89,7 +89,9 @@ keymap("n", "<space>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<space>g", "<cmd>Telescope live_grep<cr>", opts)
 
--- nvim-tree
+-- neo-tree
 keymap("n", "<leader>e", ":NeoTreeRevealInSplitToggle<cr>", opts)
 keymap("n", "<space>e", ":NeoTreeRevealInSplitToggle<cr>", opts)
 
+-- Trouble
+keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
