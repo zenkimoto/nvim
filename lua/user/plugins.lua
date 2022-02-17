@@ -61,40 +61,40 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'
 
   -- Comments
-  --use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Autopairs
---  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- cmp Plugins
---  use "hrsh7th/nvim-cmp" -- The completion plugin
---  use "hrsh7th/cmp-buffer" -- buffer completions
---  use "hrsh7th/cmp-path" -- path completions
---  use "hrsh7th/cmp-cmdline" -- cmdline completions
---  use "saadparwaiz1/cmp_luasnip" -- snippet completions
---  use "hrsh7th/cmp-nvim-lsp"
---  use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- Snippets
---  use "L3MON4D3/LuaSnip" --snippet engine
---  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- LSP
---  use "neovim/nvim-lspconfig" -- enable LSP
---  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter
---  use {
---    "nvim-treesitter/nvim-treesitter",
---    run = ":TSUpdate",
---  }
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
 
   -- Context aware comments (requires treesitter)
-  --use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- nvim-tree
 --  use 'kyazdani42/nvim-web-devicons'
@@ -110,17 +110,17 @@ return packer.startup(function(use)
     },
   }  
 
-  -- Git
-  --use "lewis6991/gitsigns.nvim"
+  -- GitSigns
+  use "lewis6991/gitsigns.nvim"
 
   -- Toggleterm
   use "akinsho/toggleterm.nvim"
 
   -- neoscroll
-  --use 'karb94/neoscroll.nvim'
+  use 'karb94/neoscroll.nvim'
 
   -- indent-blankline
-  --use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   use {
     'phaazon/hop.nvim',
