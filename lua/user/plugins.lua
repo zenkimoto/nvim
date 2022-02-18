@@ -50,8 +50,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"      -- Useful lua functions used ny lots of plugins
 
   -- Bufferline
---  use "akinsho/bufferline.nvim"
---  use "moll/vim-bbye"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   -- Color Schemes
   use "folke/tokyonight.nvim"
@@ -140,6 +140,13 @@ return packer.startup(function(use)
         -- or leave it empty to use the default settings
         -- refer to the configuration section below
       }
+    end
+  }
+
+  use {
+    "ur4ltz/surround.nvim",
+    config = function()
+      require"surround".setup {mappings_style = "surround"}
     end
   }
 
