@@ -7,7 +7,6 @@ then
   require "user.cmp"
   require "user.lsp"
   require "user.treesitter"
---  require "user.nvim-tree"
   require "user.neo-tree"
   require "user.autopairs"
   require "user.comment"
