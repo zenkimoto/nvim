@@ -47,7 +47,13 @@ return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim"     -- Have packer manage itself
 
-  use "ChristianChiarulli/vscode-easymotion" 
+  use "asvetliakov/vim-easymotion"
+
+  use {
+    "ur4ltz/surround.nvim",
+    config = function()
+      require"surround".setup {mappings_style = "surround"}
+    end
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

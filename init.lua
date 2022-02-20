@@ -20,5 +20,5 @@ then
   require "user.hop"
 else
   require "user.plugins-vscode"
-  require "user.keymaps"
+  require "user.keymaps-vscode"
 end
