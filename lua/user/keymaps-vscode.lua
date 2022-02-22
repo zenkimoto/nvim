@@ -18,7 +18,6 @@ keymap("n", "<S-k>", "<C-u>", opts)
 -- Insert Mode --
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
-keymap("i", ";;", "<ESC>A;", opts)
 
 -- Visual Mode --
 -- Stay in indent mode

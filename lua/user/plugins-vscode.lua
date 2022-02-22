@@ -54,6 +54,7 @@ return packer.startup(function(use)
     config = function()
       require"surround".setup {mappings_style = "surround"}
     end
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
