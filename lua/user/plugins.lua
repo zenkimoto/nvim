@@ -56,6 +56,7 @@ return packer.startup(function(use)
   -- Color Schemes
   use "folke/tokyonight.nvim"
   use "joshdick/onedark.vim"
+  use 'Mofiqul/dracula.nvim'
 
   -- Lualine
   use 'nvim-lualine/lualine.nvim'
