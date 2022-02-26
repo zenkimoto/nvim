@@ -50,6 +50,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Delete buffers
 keymap("n", "<leader>c", ":Bdelete<CR>", opts)
 keymap("n", "<space>c", ":Bdelete<CR>", opts)
+keymap("n", "<M-c>", ":Bdelete<CR>", opts)
 
 -- Insert Mode --
 -- Press jk fast to exit insert mode
@@ -82,11 +83,11 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<space>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<space>ff", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<space>g", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>gr", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<space>gr", "<cmd>Telescope live_grep<cr>", opts)
 
 -- neo-tree
 keymap("n", "<leader>e", ":NeoTreeRevealInSplitToggle<cr>", opts)
